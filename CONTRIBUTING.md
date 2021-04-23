@@ -26,7 +26,13 @@ To run the jupyter notebook server, you can use:
 
 And browse to the URL printed in the terminal output.
 
-From there you'll be able to run all Jupyter Notebook examples.
+From there you'll be able to run all Jupyter Notebook examples. This also
+runs a local webserver that can source notebook files to the Planetary
+Computer docsite development environment. That project is preconfigured to
+integrate with this server, so after running `./scripts/server` from within
+this project, run `./scripts/update --devdocs` from the Planetary Computer
+website project, and it will treat this local instance as the source for
+external docs notebooks. See that projects ETL readme for more information.
 
 ## Contributing
 
